@@ -1,0 +1,32 @@
+.navigation {
+  width: 88%;
+}
+
+.navigation ul{
+  width: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+.navigation__item {
+  margin-right: 2%;
+  opacity: .6;
+
+  &--current {
+    opacity: 1.0;
+  }
+}
+
+.navigation__item a {
+  font-family: "Arial MT Bold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  text-decoration: none;
+
+  &:visited {
+    color: #333333;
+  }
+}

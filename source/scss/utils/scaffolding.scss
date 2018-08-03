@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Arial MT";
+  src: url("../fonts/ArialMT.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial MT Bold";
+  src: url("../fonts/Arial-BoldMT.woff") format("woff");
+  font-weight: 700;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  font-family: "Arial MT Bold", serif, Arial;
+  font-size: 18px;
+  color: #333333;
+}

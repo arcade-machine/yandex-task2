@@ -1,0 +1,19 @@
+.footer-navigation ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+.footer-navigation__item {
+  margin-right: 10px;
+
+  & a {
+    font-family: "Arial MT", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #858585;
+    letter-spacing: 0.01px;
+    text-decoration: none;
+  }
+}

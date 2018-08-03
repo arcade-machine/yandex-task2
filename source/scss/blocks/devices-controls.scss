@@ -1,0 +1,23 @@
+.devices-controls {
+  width: 4%;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.devices-controls__button {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+
+  &--right img {
+    transform: scaleX(-1);
+  }
+}

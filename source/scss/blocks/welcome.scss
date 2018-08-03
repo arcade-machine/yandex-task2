@@ -1,0 +1,61 @@
+.welcome {
+  width: 100%;
+  padding: 25px 25px 0 25px;
+  display: flex;
+  background-image: url("../img/bg@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+
+  & h3 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 6px;
+    font-family: "Arial MT Bold", Arial, sans-serif;
+    font-size: 27px;
+    color: #333333;
+  }
+
+  & p {
+    padding: 0;
+    margin: 0;
+    font-family: "Arial MT", Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+  }
+}
+
+.welcome__wrapper {
+  width: 57%;
+
+  & p {
+    margin-bottom: 25px;
+  }
+}
+
+.welcome__scroll-button {
+  display: block;
+  margin: 0 auto;
+}
+
+.welcome__weather {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+
+  & p {
+    padding: 0;
+    margin: 0;
+    margin-right: 18px;
+    font-family: "Arial MT", Arial, sans-serif;
+    font-size: 14px;
+    color: #858585;
+  }
+
+  & .welcome__celsius {
+    font-family: "Arial MT Bold", Arial, sans-serif;
+    font-size: 36px;
+    color: #333333;
+  }
+}
