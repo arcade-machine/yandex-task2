@@ -1,0 +1,101 @@
+.warm-floor {
+  width: 50%;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 25%;
+  left: 28%;
+}
+
+.warm-floor__content {
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.warm-floor__wrapper {
+  width: 50%;
+
+  & h3 {
+    padding: 0;
+    margin: 0;
+    font-family: "Arial MT Bold", Arial, sans-serif;
+    font-size: 27px;
+    color: #333333;
+  }
+
+  & p {
+    padding: 0;
+    margin: 0;
+    font-family: "Arial MT", Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+  }
+}
+
+.warm-floor__temperature {
+  width: 50%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  & p {
+    padding: 0;
+    margin: 0;
+    font-family: "Arial MT Bold", Arial, sans-serif;
+    font-size: 36px;
+    color: #333333;
+  }
+}
+
+.warm-floor__termostat {
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  background-image: url("../img/Oval@1x.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  & p {
+    padding: 0;
+    margin: 0 auto;
+    font-family: "Arial MT Bold", Arial, sans-serif;
+    font-size: 66px;
+    line-height: 160px;
+    color: #333333;
+    text-align: center;
+    background-image: url("../img/background.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+.warm-floor__buttons {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+
+  & .warm-floor__button {
+    width: 48%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-family: "Arial MT Bold", Arial, sans-serif;
+    font-size: 18px;
+    color: #000000;
+
+    &--apply {
+      background-color: #FFD93E;
+    }
+  }
+}

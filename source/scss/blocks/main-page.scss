@@ -1,11 +1,19 @@
 .main-page {
   width: 100%;
   max-width: 1366px;
-  padding-top: 3.5%;
+  padding-top: 1.9%;
   padding-left: 2.9%;
   padding-right: 2.9%;
   margin: 0 auto;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+}
+
+@media (min-width: $desktop) {
+  .main-page {
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }

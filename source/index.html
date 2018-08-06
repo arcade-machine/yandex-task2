@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <title>Яндекс Дом</title>
     <link rel="stylesheet" href="css/styles.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
-<header class="main-header">
-    <img class="main-header__logo" src="img/Яндекс%20Дом@1x.png" width="108" height="27">
-    <nav class="main-header__navigation navigation">
-        <ul>
-            <li class="navigation__item navigation__item--current">
-                <a href="#">Сводка</a>
-            </li>
-            <li class="navigation__item">
-                <a href="#">Устройства</a>
-            </li>
-            <li class="navigation__item">
-                <a href="#">Сценарии</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+<div class="top-wrapper">
+    <header class="main-header">
+        <img class="main-header__logo" src="img/Яндекс%20Дом@1x.png" width="108" height="27">
+        <nav class="main-header__navigation navigation">
+            <ul>
+                <li class="navigation__item navigation__item--current">
+                    <a href="#">Сводка</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#">Устройства</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#">Сценарии</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
 <main class="main-page">
     <section class="main-page__homepage homepage">
         <h2>Главное</h2>
@@ -95,7 +98,7 @@
                 <h4>Набрать горячую ванну</h4>
                 <p>Начнется в 18:00</p>
             </li>
-            <li class="favourite-scripts__item">
+            <li class="favourite-scripts__item favourite-scripts__item--warm-floor">
                 <img src="img/icon_temperature_2.svg" width="24" height="24">
                 <h4>Сделать пол теплым по всей квартире</h4>
             </li>
@@ -135,7 +138,7 @@
             </ul>
         </div>
         <ul class="favourite-devices__devices devices">
-            <li class="devices__item">
+            <li class="devices__item devices__item--light">
                 <img src="img/icon_sun_2.svg" width="24" height="24">
                 <h4>Xiaomi Yeelight LED Smart Bulb</h4>
                 <p>Включено</p>
@@ -145,7 +148,7 @@
                 <h4>D-Link Omna 180 Cam</h4>
                 <p>Включится в 17:00</p>
             </li>
-            <li class="devices__item">
+            <li class="devices__item devices__item--temperature">
                 <img src="img/icon_temperature.svg" width="24" height="24">
                 <h4>Elgato Eve Degree Connected</h4>
                 <p>Выключено до 17:00</p>
@@ -189,6 +192,87 @@
         <p>©2001-2017 ООО "Яндекс"</p>
     </section>
 </footer>
-
+<div class="pop-up">
+    <section class="pop-up__warm-floor warm-floor">
+        <div class="warm-floor__content">
+            <div class="warm-floor__wrapper">
+                <h3>Xiaomi Warm Floor</h3>
+                <p>Включено</p>
+            </div>
+            <div class="warm-floor__temperature">
+                <p>+23</p>
+                <img src="img/icon_temperature_2.svg" width="40" height="40">
+            </div>
+            <div class="warm-floor__termostat">
+                <p>+23</p>
+            </div>
+        </div>
+        <div class="warm-floor__buttons">
+            <button class="warm-floor__button warm-floor__button--apply">Применить</button>
+            <button class="warm-floor__button">Закрыть</button>
+        </div>
+    </section>
+    <section class="pop-up__light light">
+        <div class="light__content">
+            <div class="light__wrapper">
+                <h3>Xiaomi Yeelight LED Smart Bulb</h3>
+                <p>Включится в 17:00</p>
+                <img class="light__icon" src="img/icon_sun.svg" width="40" height="40">
+            </div>
+            <ul class="light__list">
+                <li class="light__item light__item--current">
+                    <a>Вручную</a>
+                </li>
+                <li class="light__item">
+                    <a>Дневной свет</a>
+                </li>
+                <li class="light__item">
+                    <a>Вечерний свет</a>
+                </li>
+                <li class="light__item">
+                    <a>Рассвет</a>
+                </li>
+            </ul>
+            <div class="light__termostat">
+                <div class="light__slider"></div>
+            </div>
+        </div>
+        <div class="light__buttons">
+            <button class="light__button light__button--apply">Применить</button>
+            <button class="light__button">Закрыть</button>
+        </div>
+    </section>
+    <section class="pop-up__temperature temperature">
+        <div class="temperature__content">
+            <div class="temperature__wrapper">
+                <h3>Elgato Eve Degree Connected</h3>
+                <p>Включено</p>
+                <img class="temperature__icon" src="img/icon_temperature_2.svg" width="40" height="40">
+            </div>
+            <ul class="temperature__list">
+                <li class="temperature__item temperature__item--current">
+                    <a>Вручную</a>
+                </li>
+                <li class="temperature__item">
+                    <a>Холодно</a>
+                </li>
+                <li class="temperature__item">
+                    <a>Тепло</a>
+                </li>
+                <li class="temperature__item">
+                    <a>Жарко</a>
+                </li>
+            </ul>
+            <div class="temperature__termostat">
+                <div class="temperature__slider"></div>
+            </div>
+        </div>
+        <div class="temperature__buttons">
+            <button class="temperature__button temperature__button--apply">Применить</button>
+            <button class="temperature__button">Закрыть</button>
+        </div>
+    </section>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
