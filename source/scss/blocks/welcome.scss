@@ -4,7 +4,8 @@
   display: flex;
   background-image: url("../img/bg@1x.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  border-radius: 20px;
   box-sizing: border-box;
 
   & h3 {
@@ -57,5 +58,20 @@
     font-family: "Arial MT Bold", Arial, sans-serif;
     font-size: 36px;
     color: #333333;
+  }
+}
+
+@media (max-width: $mobile) {
+  .welcome {
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .welcome__wrapper {
+    width: 100%;
+  }
+
+  .welcome__weather {
+    margin-bottom: 20px;
   }
 }

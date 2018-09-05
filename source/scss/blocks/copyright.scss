@@ -11,3 +11,10 @@
     letter-spacing: 0.01px;
   }
 }
+
+@media (max-width: $mobile) {
+  .copyright {
+    margin: 0;
+    text-align: center;
+  }
+}

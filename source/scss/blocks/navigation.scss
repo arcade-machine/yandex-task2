@@ -1,5 +1,6 @@
 .navigation {
   width: 88%;
+  position: relative;
 }
 
 .navigation ul{
@@ -28,5 +29,24 @@
 
   &:visited {
     color: #333333;
+  }
+}
+
+@media (max-width: $mobile) {
+  .navigation {
+    width: 100%;
+    padding-top: 2%;
+    display: none;
+    transition: all 0.4s ease;
+  }
+
+  .navigation ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .navigation__item {
+    margin-right: 0;
+    text-align: center;
   }
 }

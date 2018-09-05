@@ -56,3 +56,17 @@
     background-color: #FFFFFF;
   }
 }
+
+@media (max-width: $mobile) {
+  .favourite-scripts {
+    width: 100%;
+    padding-left: 2.9%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .favourite-scripts__list {
+    grid-template-columns: repeat(6, 200px);
+  }
+}

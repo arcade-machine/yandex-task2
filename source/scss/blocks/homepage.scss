@@ -1,8 +1,21 @@
 .homepage {
   width: 50%;
-
   margin-bottom: 30px;
+
   & h2 {
     margin-bottom: 2.4%;
+  }
+}
+
+@media (max-width: $mobile) {
+  .homepage {
+    width: 100%;
+    padding-left: 2.9%;
+    padding-right: 2.9%;
+    box-sizing: border-box;
+
+    & h2 {
+      display: none;
+    }
   }
 }

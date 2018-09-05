@@ -17,3 +17,15 @@
     text-decoration: none;
   }
 }
+
+@media (max-width: $mobile) {
+  .footer-navigation ul {
+    flex-direction: column;
+  }
+
+  .footer-navigation__item {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}

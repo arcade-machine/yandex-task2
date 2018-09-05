@@ -9,7 +9,12 @@
 }
 
 .main-header__logo {
+  display: block;
   margin-right: 3.8%;
+}
+
+.main-header__burger {
+  display: none;
 }
 
 @media (min-width: $desktop) {
@@ -18,5 +23,33 @@
     padding-left: 40px;
     padding-bottom: 32px;
     padding-right: 40px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .main-header__logo {
+    margin-right: 0;
+  }
+
+  .main-header {
+    flex-wrap: wrap;
+  }
+
+  .main-header__burger {
+    width: 15px;
+    height: 14px;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    display: block;
+    background-color: transparent;
+    background-image: url("../img/icon_list_m@1x.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+  }
+
+  .main-header--open-nav .navigation {
+    display: flex;
   }
 }

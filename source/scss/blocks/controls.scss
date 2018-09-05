@@ -21,3 +21,9 @@
     transform: scaleX(-1);
   }
 }
+
+@media (max-width: $mobile) {
+  .scripts-controls {
+    display: none;
+  }
+}

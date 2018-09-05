@@ -42,3 +42,17 @@
     border-top-right-radius: 20px;
   }
 }
+
+@media (max-width: $mobile) {
+  .welcome__tasks {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+
+  .welcome-tasks__item--scroll {
+    display: none;
+  }
+}

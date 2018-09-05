@@ -10,9 +10,11 @@
 }
 
 $desktop: 1366px;
+$mobile: 768px;
 
 body {
   width: 100vw;
+  min-width: 320px;
   height: 100vh;
   padding: 0;
   margin: 0;
@@ -32,4 +34,15 @@ h2 {
   font-family: "Arial MT Bold", serif, Arial;
   font-size: 18px;
   color: #333333;
+}
+
+@media (max-width: $mobile) {
+  body {
+    width: auto;
+    height: auto;
+  }
+
+  .top-wrapper {
+    border: none;
+  }
 }

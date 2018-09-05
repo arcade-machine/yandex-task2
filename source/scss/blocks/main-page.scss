@@ -17,3 +17,9 @@
     padding-right: 40px;
   }
 }
+
+@media (max-width: $mobile) {
+  .main-page {
+    padding: 0;
+  }
+}
