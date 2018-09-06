@@ -1,7 +1,8 @@
 .pop-up--open {
   width: 100vw;
+  min-width: 320px;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: rgba(51,51,51,0.50);
@@ -9,5 +10,11 @@
 
   & .open {
     display: flex;
+  }
+}
+
+@media (max-width: $mobile) {
+  .pop-up--open {
+    overflow: hidden;
   }
 }

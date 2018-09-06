@@ -99,3 +99,53 @@
     }
   }
 }
+
+@media (max-width: $mobile) {
+  .warm-floor {
+    width: 90%;
+    height: 96%;
+    top: 2%;
+    left: 5%;
+  }
+
+  .warm-floor__wrapper {
+    width: 100%;
+
+    & h3 {
+      font-size: 18px;
+    }
+
+    & p {
+      font-size: 12px;
+    }
+  }
+
+  .warm-floor__content {
+    padding: 20px;
+    margin-bottom: 15px;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .warm-floor__termostat {
+    margin: auto;
+  }
+
+  .warm-floor__temperature {
+    display: none;
+  }
+
+  .warm-floor__buttons {
+    flex-direction: column;
+
+    & .warm-floor__button {
+      width: 100%;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
